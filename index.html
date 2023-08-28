@@ -1,96 +1,38 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Space Mono', monospace;
-}
-
-img{
-    width: 100%;
-    height: auto;
-}
-
-/*
-    NAVEGACION
-*/
-
-.container__header{
-    padding: 1rem 0;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.container__header .info_not-found{
-    font-size: 1.5rem;
-    font-weight:bold;
-    font-family: 'Inconsolata',monospace;
-    letter-spacing: -1.5px;
-}
-
-/*
-    CONTENIDO - IMG & INFO
-*/
-.width_container{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.width_container .img_info{
-    width: 17.927;
-    padding: .3rem;
-}
-
-.container-info .title_info{
-    font-weight: 700;
-    font-size: 3rem;
-    letter-spacing:-4px;
-    line-height: 3.5rem;
-}
-
-.paragraf-info{
-    padding: 2rem 1rem 2rem 0;
-    color: #4F4F4F;
-}
-
-.width_container .button-info{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    padding: 1.4rem 1.6rem;
-    letter-spacing: -1px;
-    font-weight: 500;
-}
-
-@media screen and (min-width:1100px) {
-
-    .width_container{
-        display: flex;
-        margin: 5rem;
-    }
-
-    .width_container .img_info{
-        width: 33.701rem;
-        height: 35rem;
-        margin-right:4rem;
-    }
-
-    .container-info .title_info{
-        font-size: 4rem;
-        letter-spacing: 1px;
-        line-height: 6rem;
-    }
-
-    .paragraf-info{
-        width: 65%;
-        font-size: 1.5rem;
-        padding: 4.5rem 0;
-    }
-
-
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Not Found</title>
+    <link rel="icon" href="assets/error-404.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Inter:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container__header">
+        <p class="info_not-found">404 NOT FOUND</p>
+      </div>
+    </header>
+    <main>
+      <section class="width_container">
+        <img src="assets/Scarecrow.png" alt="Brujo" class="img_info" />
+        <div class="container-info">
+          <h1 class="title_info">I have bad news for you</h1>
+          <p class="paragraf-info">
+            The page you are lookin for might be removed or is temporarily
+            unavailable
+          </p>
+          <a href="#" class="button-info">
+            BACK TO HOMEPAGE
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
