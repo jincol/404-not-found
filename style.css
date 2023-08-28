@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/*
+    NAVEGACION
+*/
+
+.container__header{
+    padding: 1rem 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container__header .info_not-found{
+    font-size: 1.5rem;
+    font-weight:bold;
+    font-family: 'Inconsolata',monospace;
+    letter-spacing: -1.5px;
+}
+
+/*
+    CONTENIDO - IMG & INFO
+*/
+.width_container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.width_container .img_info{
+    width: 17.927;
+    padding: .3rem;
+}
+
+.container-info .title_info{
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing:-4px;
+    line-height: 3.5rem;
+}
+
+.paragraf-info{
+    padding: 2rem 1rem 2rem 0;
+    color: #4F4F4F;
+}
+
+.width_container .button-info{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 1.4rem 1.6rem;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+@media screen and (min-width:768px) {
+
+    .width_container{
+        display: flex;
+        margin: 5rem;
+    }
+
+    .width_container .img_info{
+        width: 33.701rem;
+        height: 35rem;
+        margin-right:4rem;
+    }
+
+    .container-info .title_info{
+        font-size: 4rem;
+        letter-spacing: 1px;
+        line-height: 6rem;
+    }
+
+    .paragraf-info{
+        width: 65%;
+        font-size: 1.5rem;
+        padding: 4.5rem 0;
+    }
+
+
+}
